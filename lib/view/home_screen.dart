@@ -1,6 +1,7 @@
-import 'package:car_app_ui/utils/constant.dart';
-import 'package:car_app_ui/view/details_screen.dart';
 import 'package:flutter/material.dart';
+
+import '../utils/constant.dart';
+import 'details_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

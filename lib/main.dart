@@ -1,6 +1,8 @@
-import 'package:car_app_ui/view/home_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'view/home_screen.dart';
+
 
 void main(){
   runApp(MyApp());
@@ -10,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
 
       home: HomeScreen(),
       debugShowCheckedModeBanner: false,
