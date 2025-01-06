@@ -1,16 +1,7 @@
-# car_app_ui
+# Car App
 
-A new Flutter project.
+## Home Screen
+<img src="https://github.com/user-attachments/assets/d9767a67-f4f0-4bfe-bd09-a39f1bfeb4fd" alt="Home Screen" width="300" height="500">
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Details Screen
+<img src="https://github.com/user-attachments/assets/69c30c53-998f-4819-b808-85d94af1826f" alt="Details Screen" width="300" height="500">
