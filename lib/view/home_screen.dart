@@ -71,25 +71,25 @@ class _HomeScreenState extends State<HomeScreen> {
                   itemCount: listOfProduct.length,
                   itemBuilder: (BuildContext context, int index) {
                     final data = listOfProduct[index];
-                    return Hero(
-                        tag: data["tag"] ?? "",
-                        child: ProductItem(
-                          onTap: () {
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(
-                            //     builder: (context) => ProductDetail(
-                            //         image: data["image"] ?? "",
-                            //         name: data["title"] ?? "",
-                            //         price: data["price"] ?? ""),
-                            //   ),
-                            // );
-                          },
-                          price: data["price"] ?? "",
-                          title: data["title"] ?? "",
-                          image: data["image"] ?? "",
-                          subTitle: data["subTitle"] ?? "",
-                        ));
+                    //hero widget add
+                    return ProductItem(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => DetailsScreen(
+                              price: data["price"] ?? "",
+                              title: data["title"] ?? "",
+                              imageLink: data["image"] ?? "",
+                            ),
+                          ),
+                        );
+                      },
+                      price: data["price"] ?? "",
+                      title: data["title"] ?? "",
+                      image: data["image"] ?? "",
+                      subTitle: data["subTitle"] ?? "",
+                    );
                   },
                 ),
               )
