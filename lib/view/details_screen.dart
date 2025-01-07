@@ -98,7 +98,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                               ),
                             ),
                             const SizedBox(
-                              height: 50,
+                              height: 80,
                             ),
                             Container(
                               height: 20,
