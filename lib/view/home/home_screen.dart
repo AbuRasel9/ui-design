@@ -1,4 +1,5 @@
 import 'package:car_app_ui/utils/constant.dart';
+import 'package:car_app_ui/view/home/widget/popular_category_list_view.dart';
 import 'package:car_app_ui/view/home/widget/title_text_item.dart';
 import 'package:car_app_ui/widget/custom_slidder.dart';
 import 'package:car_app_ui/widget/image_container.dart';
@@ -36,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.all(15.0),
+        padding: const EdgeInsets.all(15.0),
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -75,7 +76,46 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 15,
               ),
 
-             const CustomSlider(),
+              const CustomSlider(),
+
+              const SizedBox(
+                height: 20,
+              ),
+              //popular categories
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    "Popular Categories",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.deepPurple.withOpacity(
+                        .8,
+                      ),
+                    ),
+                  ),
+                  Text(
+                    "See All",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.deepPurple.withOpacity(
+                        .6,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              //popular categories list view
+              const SizedBox(
+                height: 55,
+                child: PopularCategoryListView(),
+              )
             ],
           ),
         ),
@@ -83,4 +123,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
