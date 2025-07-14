@@ -1,4 +1,4 @@
-import 'package:car_app_ui/view/home_screen.dart';
+import 'package:car_app_ui/view/leader_board_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 
-      home: HomeScreen(),
+      home: LeaderBoardScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
