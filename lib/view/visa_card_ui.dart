@@ -17,7 +17,7 @@ class _VisaCardUiState extends State<VisaCardUi> {
       ),
       body: Center(
         child: Container(
-          margin: EdgeInsets.all(
+          margin: const EdgeInsets.all(
             15,
           ),
           height: 224,
@@ -55,7 +55,7 @@ class _VisaCardUiState extends State<VisaCardUi> {
                   "**** **** **** 2345",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 35,
+                    fontSize: 30,
                     color: ConstantColor.whiteColor,
                   ),
                 ),
