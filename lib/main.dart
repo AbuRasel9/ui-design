@@ -1,5 +1,5 @@
 import 'package:car_app_ui/provider/selection_tab_provider.dart';
-import 'package:car_app_ui/view/user_profile_screen.dart';
+import 'package:car_app_ui/view/visa_card_ui.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         )
       ],
       child: const MaterialApp(
-        home: UserProfileScreen(),
+        home: VisaCardUi(),
         debugShowCheckedModeBanner: false,
       ),
     );
